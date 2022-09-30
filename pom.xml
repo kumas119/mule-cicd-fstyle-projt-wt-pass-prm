@@ -96,16 +96,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<sharedLibraries>
-						<sharedLibrary>
-							<groupId>com.mycompany</groupId>
-							<artifactId>ojdbc8</artifactId>
-						</sharedLibrary>
-						<sharedLibrary>
-							<groupId>com.oracle</groupId>
-							<artifactId>ojdbc8</artifactId>
-						</sharedLibrary>
-					</sharedLibraries>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
@@ -137,16 +127,6 @@
 			<version>1.12.1</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		<dependency>
-			<groupId>com.mycompany</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>12.2.0.1</version>
-		</dependency>
 	</dependencies>
 
 	<repositories>
@@ -168,6 +148,7 @@
 	        <url>https://repository-master.mulesoft.org/snapshots/</url>
 	        <layout>default</layout>
     	</repository>
+    	
 	</repositories>
 
 	<pluginRepositories>
